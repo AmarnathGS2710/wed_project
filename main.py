@@ -6,5 +6,5 @@ app = FastAPI()
 templates = Jinja2Templates(directory="/code")
 
 @app.get("/")
-def from_post(request: Request):
-    return templates.TemplateResponse('Form,html', context={'request': request}
+def form_post(request: Request):
+    return templates.TemplateResponse('form.html', context={'request': request})
